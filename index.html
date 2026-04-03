@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Portfolio</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-[#020617] text-white">
+
+<!-- NAVBAR -->
+ <header class="fixed w-full top-0 left-0 bg-[#020617]/80 backdrop-blur z-50">
+
+  <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+
+    <!-- LOGO -->
+    <a href="#home">
+      <img src="Images/logoNoback.png" class="h-12">
+    </a>
+
+    <!-- RIGHT SIDE -->
+    <div class="flex items-center gap-4">
+
+      <!-- DESKTOP MENU -->
+      <ul class="hidden md:flex space-x-6 text-gray-300 text-lg font-semibold">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+    
+
+      <!-- HAMBURGER -->
+      <button id="menuBtn" class="md:hidden text-white text-2xl">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+    </div>
+
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div id="mobileMenu"
+    class="hidden flex-col bg-[#020617] text-center py-4 space-y-4 md:hidden">
+
+    <a href="#home">Home |</a>
+    <a href="#about">About |</a>
+    <a href="#services">Services |</a>
+    <a href="#portfolio">Portfolio |</a>
+    <a href="#contact">Contact</a>
+
+  </div>
+
+</header>
+<!-- HERO -->
+<section id="home" class="min-h-screen flex items-center bg-gradient-to-br from-[#0f172a] to-[#020617]">
+
+  <div class="max-w-7xl mx-auto px-6 flex flex-col-reverse md:flex-row items-center justify-between gap-10 w-full">
+
+    <!-- LEFT -->
+    <div class="max-w-xl mt-20 md:mt-0 text-center md:text-left">
+   <h1 class="text-3xl md:text-6xl font-bold leading-tight">
+  Hey! I’m <span class="text-red-500">Rabby</span> <br>
+  <span class="text-gray-400 block mt-2">From Bangladesh.</span>
+</h1>
+
+
+     <h3 class="mt-4 text-2xl md:text-3xl font-bold text-gray-300">
+  I am <span id="typing" class="text-purple-400 font-semibold transition-opacity duration-500"></span>
+</h3>
+
+      <p class="mt-6 text-gray-400">
+       A passionate developer from Bangladesh specializing in .NET backend, AI automation, and SQL Server solutions.
+      </p>
+
+      <div class="flex gap-4 mt-6 justify-center md:justify-start">
+
+  <!-- View CV -->
+  <a href="Images/Lebenslauf fur Rabby (1) (2).pdf" target="_blank"
+     class="px-6 py-2 border border-red-500 text-red-500 rounded-md 
+     transition duration-300 hover:bg-red-500 hover:text-white 
+     hover:shadow-[0_0_15px_red]">
+    View CV
+  </a>
+
+  <!-- Download CV -->
+  <a href="Images/Lebenslauf fur Rabby (1) (2).pdf" download
+     class="px-6 py-2 border border-red-500 text-red-500 rounded-md 
+     transition duration-300 hover:bg-red-500 hover:text-white 
+     hover:shadow-[0_0_15px_red]">
+    Download CV
+  </a>
+
+</div>
+    </div>
+
+    
+   <!-- RIGHT -->
+<div class="relative mt-10 md:mt-0 flex justify-center items-center">
+
+  <!-- Glow (lowest layer) -->
+  <div class="absolute w-[280px] h-[280px] md:w-[480px] md:h-[480px] bg-purple-600 rounded-full blur-[140px] opacity-40 z-0"></div>
+
+  <!-- Ring (middle layer) -->
+  <div class="absolute w-[420px] h-[420px] border border-purple-500 rounded-full z-10"></div>
+
+  <!-- Image (top layer) -->
+  <img src="Images/Me(sec editon).png"
+  class="relative w-[260px] md:w-[420px] h-[260px] md:h-[420px] object-cover rounded-full z-20 shadow-lg"
+  alt="profile">
+
+</div>
+
+  </div>
+
+
+ <!-- SOCIAL -->
+<div class="hidden md:flex flex-col gap-4 fixed right-6 top-1/2 -translate-y-1/2 z-50">
+
+  <a href="https://www.linkedin.com/in/mehedi-hasan-rabby-013a89222" target="_blank"
+     class="w-10 h-10 flex items-center justify-center bg-purple-600 rounded-lg text-white 
+     transition duration-300 transform hover:-translate-y-2 hover:scale-110 
+     hover:bg-purple-500 hover:shadow-[0_0_20px_#a855f7]">
+    <i class="fa-brands fa-linkedin"></i>
+  </a>
+
+  <a href="https://www.instagram.com/rabbydotcore?igsh=M2F1bWpnNG5oaTJj" target="_blank"
+     class="w-10 h-10 flex items-center justify-center bg-purple-600 rounded-lg text-white 
+     transition duration-300 transform hover:-translate-y-2 hover:scale-110 
+     hover:bg-purple-500 hover:shadow-[0_0_20px_#a855f7]">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+
+  <a href="https://github.com/MH-Rabby" target="_blank"
+     class="w-10 h-10 flex items-center justify-center bg-purple-600 rounded-lg text-white 
+     transition duration-300 transform hover:-translate-y-2 hover:scale-110 
+     hover:bg-purple-500 hover:shadow-[0_0_20px_#a855f7]">
+    <i class="fa-brands fa-github"></i>
+  </a>
+
+</div>
+
+</section>
+<section id="about" class="py-20 bg-[#020617]">
+
+  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row gap-8 md:gap-12">
+
+    <!-- LEFT SIDE -->
+   <div class="flex-1 text-center md:text-left">
+
+      <h2 class="text-4xl font-bold mb-4">
+        About <span class="text-purple-500">Me</span>
+      </h2>
+
+      <p class="text-gray-400 mb-6">
+        Hello! I'm Rabby, a passionate developer from Bangladesh. I specialize in .NET backend, AI automation, and SQL Server solutions.
+      </p>
+
+      <!-- TABS -->
+      <div class="flex flex-wrap justify-center md:justify-start gap-4 mb-6 text-gray-400 font-semibold">
+        <button class="tab-btn text-purple-400 border-b-2 border-purple-400 pb-1" data-tab="skills">Skills</button>
+        <button class="tab-btn" data-tab="education">Education</button>
+        <button class="tab-btn" data-tab="experience">Experience</button>
+        <button class="tab-btn" data-tab="hobbies">Hobbies</button>
+      </div>
+
+      <!-- CONTENT -->
+      <div id="skills" class="tab-content">
+        <ul class="space-y-2 text-gray-300 list-disc pl-5">
+          <li>ASP.NET Core</li>
+          <li>MS SQL Server</li>
+          <li>Backend Development</li>
+          <li>AI Automation</li>
+        </ul>
+      </div>
+
+      <div id="education" class="tab-content hidden">
+        <ul class="space-y-2 text-gray-300 list-disc pl-5">
+          <li>Diploma in Computer Engineering</li>
+          <li>Web Development Training</li>
+        </ul>
+      </div>
+
+      <div id="experience" class="tab-content hidden">
+        <ul class="space-y-2 text-gray-300 list-disc pl-5">
+          <li>.NET Developer</li>
+          <li>SQL Server Specialist</li>
+          <li>AI Automation Projects</li>
+        </ul>
+      </div>
+
+      <div id="hobbies" class="tab-content hidden">
+        <ul class="space-y-2 text-gray-300 list-disc pl-5">
+          <li>Coding</li>
+          <li>Learning New Tech</li>
+          <li>Problem Solving</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="flex-1 space-y-6">
+
+      <!-- STATS -->
+      <div class="grid grid-cols-2 gap-3 md:gap-4">
+
+        <div class="bg-[#111827] p-5 rounded-xl text-center">
+          <h3 class="text-2xl font-bold text-purple-400">2+</h3>
+          <p class="text-gray-400 text-sm">Years Experience</p>
+        </div>
+
+        <div class="bg-[#111827] p-5 rounded-xl text-center">
+          <h3 class="text-2xl font-bold text-purple-400">10+</h3>
+          <p class="text-gray-400 text-sm">Projects</p>
+        </div>
+
+        <div class="bg-[#111827] p-5 rounded-xl text-center">
+          <h3 class="text-2xl font-bold text-purple-400">5+</h3>
+          <p class="text-gray-400 text-sm">Technologies</p>
+        </div>
+
+        <div class="bg-[#111827] p-5 rounded-xl text-center">
+          <h3 class="text-2xl font-bold text-purple-400">100%</h3>
+          <p class="text-gray-400 text-sm">Dedication</p>
+        </div>
+
+      </div>
+
+      <!-- SKILL CARD -->
+      <div class="bg-[#111827] p-4 md:p-6 rounded-xl shadow-lg">
+        <h3 class="text-lg md:text-xl font-bold text-purple-400 mb-3">My Focus</h3>
+        <p class="text-gray-400 text-sm md:text-base">
+          I focus on building scalable backend systems, AI-powered automation, and efficient database-driven applications.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Service sec -->
+</section>
+<section id="services" class="py-20 bg-[#020617] text-center">
+
+  <h2 class="text-4xl font-bold mb-12">My Services</h2>
+
+  <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+
+    <!-- CARD 1 -->
+    <div onclick="openModal('net')" 
+         class="bg-[#111827] p-4 md:p-6 rounded-xl text-left cursor-pointer space-y-3
+         transition-all duration-300 hover:-translate-y-2 
+         hover:shadow-[0_0_25px_#a855f7]">
+
+      <i class="fa-solid fa-code text-2xl md:text-3xl text-purple-400 mb-4"></i>
+
+      <h3 class="text-xl font-bold mb-3">.NET Core Development</h3>
+
+      <p class="text-gray-400 text-sm md:text-base">
+        I develop modern, secure, and scalable web applications using ASP.NET Core. I focus on building efficient backend systems, REST APIs, and database-driven solutions with MS SQL Server to deliver reliable and high-performance applications.
+      </p>
+    </div>
+
+    <!-- CARD 2 -->
+    <div onclick="openModal('iot')" 
+         class="bg-[#111827] p-4 md:p-6 rounded-xl text-left cursor-pointer space-y-3
+         transition-all duration-300 hover:-translate-y-2 
+         hover:shadow-[0_0_25px_#a855f7]">
+
+      <i class="fa-solid fa-server text-3xl text-purple-400 mb-4"></i>
+
+      <h3 class="text-xl font-bold mb-3">Ms SQL Server</h3>
+
+      <p class="text-gray-400 text-sm md:text-base">
+        I design and develop efficient database systems using MS SQL Server. I work with database architecture, normalization, stored procedures, and performance optimization to ensure secure and reliable data management.
+      </p>
+    </div>
+
+    <!-- CARD 3 -->
+    <div onclick="openModal('iot')" 
+         class="bg-[#111827] p-4 md:p-6 rounded-xl text-left cursor-pointer
+         transition-all duration-300 hover:-translate-y-2 
+         hover:shadow-[0_0_25px_#a855f7]">
+
+      <i class="fa-solid fa-microchip text-3xl text-purple-400 mb-4"></i>
+
+      <h3 class="text-xl font-bold mb-3">Internet Of Things</h3>
+
+      <p class="text-gray-400 text-sm md:text-base">
+        I develop smart automation solutions using Internet of Things (IoT) technologies. I work with sensors, microcontrollers, and cloud platforms to build intelligent systems for monitoring, control, and real-time data communication.
+      </p>
+    </div>
+
+    <!-- CARD 4 (NEW) -->
+    <div onclick="openModal('ai')" 
+         class="bg-[#111827] p-4 md:p-6 rounded-xl text-left cursor-pointer
+         transition-all duration-300 hover:-translate-y-2 
+         hover:shadow-[0_0_25px_#a855f7]">
+
+      <i class="fa-solid fa-robot text-3xl text-purple-400 mb-4"></i>
+
+      <h3 class="text-xl font-bold mb-3">AI Automation</h3>
+
+      <p class="text-gray-400 text-sm md:text-base">
+       I create intelligent automation systems using AI tools such as n8n, Zapier, and ChatGPT API. I design and integrate smart workflows to automate tasks, improve efficiency, and deliver scalable, data-driven solutions for modern applications.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+<section id="portfolio" class="py-20 bg-[#020617] text-center">
+
+  <h2 class="text-3xl md:text-4xl font-bold mb-10 md:mb-12">My Projects</h2>
+
+  <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+
+    <!-- PROJECT 1 -->
+    <div class="bg-[#111827] rounded-xl overflow-hidden group hover:-translate-y-2 transition-all duration-300 hover:shadow-[0_0_25px_#a855f7]">
+
+      <img src="Images/ASP.NET.jpg" class="w-full h-[160px] md:h-[180px] object-cover">
+
+      <div class="p-4 md:p-5 text-left">
+        <h3 class="text-base md:text-lg font-bold mb-2">.NET Web App</h3>
+
+        <p class="text-gray-400 text-sm md:text-base mb-4">
+          Scalable web application using ASP.NET Core and APIs.
+        </p>
+
+        <a href="https://github.com/MH-Rabby/.NET-Forms-Applications.git" target="_blank"
+           class="text-purple-400 hover:underline">
+          GitHub →
+        </a>
+      </div>
+
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="bg-[#111827] rounded-xl overflow-hidden group hover:-translate-y-2 transition-all duration-300 hover:shadow-[0_0_25px_#a855f7]">
+
+      <img src="Images/Db image.webp" class="w-full h-[160px] md:h-[180px] object-cover">
+
+      <div class="p-4 md:p-5 text-left">
+        <h3 class="text-base md:text-lg font-bold mb-2">SQL Database System</h3>
+
+        <p class="text-gray-400 text-sm md:text-base mb-4">
+          Database design and management using MS SQL Server.
+        </p>
+
+        <a href="https://github.com/MH-Rabby/My-sql--practise.git" target="_blank"
+           class="text-purple-400 hover:underline">
+          GitHub →
+        </a>
+      </div>
+
+    </div>
+
+    <!-- PROJECT 3 -->
+    <div class="bg-[#111827] rounded-xl overflow-hidden group hover:-translate-y-2 transition-all duration-300 hover:shadow-[0_0_25px_#a855f7]">
+
+      <img src="Images/Ai project.png" class="w-full h-[160px] md:h-[180px] object-cover">
+
+      <div class="p-4 md:p-5 text-left">
+        <h3 class="text-base md:text-lg font-bold mb-2">AI Automation Tool</h3>
+
+        <p class="text-gray-400 text-sm md:text-base mb-4">
+          Automation using n8n, Zapier & ChatGPT API.
+        </p>
+
+        <a href="https://github.com/MH-Rabby/Ai-Automation-.git" target="_blank"
+           class="text-purple-400 hover:underline">
+          GitHub →
+        </a>
+      </div>
+
+    </div>
+
+    <!-- PROJECT 4 -->
+    <div class="bg-[#111827] rounded-xl overflow-hidden group hover:-translate-y-2 transition-all duration-300 hover:shadow-[0_0_25px_#a855f7]">
+
+      <img src="Images/IOTIMAGE.jpg" class="w-full h-[160px] md:h-[180px] object-cover">
+
+      <div class="p-4 md:p-5 text-left">
+        <h3 class="text-base md:text-lg font-bold mb-2">IoT Smart System</h3>
+
+        <p class="text-gray-400 text-sm md:text-base mb-4">
+          Real-time monitoring system using IoT devices.
+        </p>
+
+        <a href="https://github.com/MH-Rabby/Iot-Projects.git" target="_blank"
+           class="text-purple-400 hover:underline">
+          GitHub →
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-20 bg-[#020617]">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 md:mb-12">Contact Me</h2>
+
+    <div class="flex flex-col md:flex-row gap-8 md:gap-10">
+
+      <!-- LEFT -->
+      <div class="flex-1 space-y-4 text-gray-300 text-sm md:text-base text-center md:text-left">
+
+        <p class="flex items-center justify-center md:justify-start gap-2">
+          <i class="fa-solid fa-envelope text-red-400"></i>
+          <span class="break-all">mhrabby103712@gmail.com</span>
+        </p>
+
+        <p class="flex items-center justify-center md:justify-start gap-2">
+          <i class="fa-solid fa-phone text-red-400"></i>
+          <span>+88 01912377380</span>
+        </p>
+
+        <p class="flex items-center justify-center md:justify-start gap-2">
+          <i class="fa-brands fa-github text-red-400"></i>
+          <span>MH-Rabby</span>
+        </p>
+
+        <p class="flex items-center justify-center md:justify-start gap-2">
+          <i class="fa-brands fa-linkedin text-red-400"></i>
+          <span>mehedi-hasan-rabby</span>
+        </p>
+
+      </div>
+
+      <!-- RIGHT FORM -->
+      <div class="flex-1">
+
+        <form id="contactForm" class="space-y-4">
+
+          <input type="text" name="name" placeholder="Your Name"
+            class="w-full p-3 rounded-md bg-[#111827] text-white outline-none focus:ring-2 focus:ring-purple-500 transition">
+
+          <input type="email" name="email" placeholder="Your Email"
+            class="w-full p-3 rounded-md bg-[#111827] text-white outline-none focus:ring-2 focus:ring-purple-500 transition">
+
+          <textarea name="message" rows="5" placeholder="Your Message"
+            class="w-full p-3 rounded-md bg-[#111827] text-white outline-none focus:ring-2 focus:ring-purple-500 transition"></textarea>
+
+          <button type="submit"
+            class="w-full md:w-auto px-6 py-2 bg-gradient-to-r from-pink-500 to-red-500 rounded-md text-white flex items-center justify-center gap-2 hover:opacity-90 transition">
+
+            <span id="btnText">Send Message</span>
+
+            <!-- Loader -->
+            <svg id="loader" class="w-4 h-4 animate-spin hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="white" stroke-width="4"></circle>
+              <path class="opacity-75" fill="white" d="M4 12a8 8 0 018-8v8z"></path>
+            </svg>
+
+          </button>
+
+          <!-- Success Message -->
+          <p id="successMsg" class="text-green-400 text-sm hidden text-center md:text-left">
+            ✅ Message sent successfully!
+          </p>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- SCROLL BUTTON -->
+<button id="scrollTopBtn"
+  class="fixed bottom-6 right-6 hidden bg-purple-600 text-white p-3 rounded-full shadow-lg hover:bg-purple-500 transition">
+  ↑
+</button>
+
+
+<!-- FOOTER -->
+<footer class="bg-[#020617] border-t border-gray-800 mt-20">
+
+  <div class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+
+    <!-- LEFT -->
+    <div>
+      <h2 class="text-2xl font-bold text-purple-500 mb-3">Rabby</h2>
+      <p class="text-gray-400 text-sm">
+        Building modern web apps, AI automation, and scalable backend systems.
+      </p>
+    </div>
+
+    <!-- CENTER -->
+    <div>
+      <h3 class="text-lg font-semibold mb-3 text-white">Quick Links</h3>
+      <ul class="space-y-2 text-gray-400 text-sm">
+        <li><a href="#home" class="hover:text-purple-400 transition">Home</a></li>
+        <li><a href="#about" class="hover:text-purple-400 transition">About</a></li>
+        <li><a href="#services" class="hover:text-purple-400 transition">Services</a></li>
+        <li><a href="#portfolio" class="hover:text-purple-400 transition">Portfolio</a></li>
+        <li><a href="#contact" class="hover:text-purple-400 transition">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- RIGHT -->
+    <div>
+      <h3 class="text-lg font-semibold mb-3 text-white">Follow Me</h3>
+
+      <div class="flex justify-center md:justify-start gap-4">
+
+        <a href="https://www.facebook.com/share/18CdegZquV/" target="_blank"
+          class="w-10 h-10 flex items-center justify-center bg-purple-600 rounded-lg 
+          hover:bg-purple-500 hover:shadow-[0_0_15px_#a855f7] transition">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/mehedi-hasan-rabby-013a89222" target="_blank"
+          class="w-10 h-10 flex items-center justify-center bg-purple-600 rounded-lg 
+          hover:bg-purple-500 hover:shadow-[0_0_15px_#a855f7] transition">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+        <a href="https://www.instagram.com/rabbydotcore" target="_blank"
+          class="w-10 h-10 flex items-center justify-center bg-purple-600 rounded-lg 
+          hover:bg-purple-500 hover:shadow-[0_0_15px_#a855f7] transition">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM -->
+  <div class="border-t border-gray-800 text-center py-4 text-gray-500 text-sm">
+    © <span id="year"></span> Rabby | All Rights Reserved 🚀
+  </div>
+  <!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+  (function(){
+    emailjs.init("GUmUxtCmOLODM-w5U");
+  })();
+</script>
+
+  <script src="script.js"></script>
+
+</footer>

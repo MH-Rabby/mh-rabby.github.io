@@ -1,0 +1,9 @@
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Optional: custom font look */
+body {
+  font-family: Arial, sans-serif;
+}
